@@ -7,6 +7,15 @@
 </head>
 <body>
   <?php
+
+    if(isset($_POST['paper'])){
+        $paper=$_POST['paper'];
+    }else{
+        $paper="Morning_Edition";
+    }
+    echo "<pre>";
+      print_r($_POST);
+    echo "</pre>";
     $xslDoc = new DOMDocument();
     $xslDoc->load("xslt_response.xsl");
 
