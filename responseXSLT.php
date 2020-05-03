@@ -95,6 +95,7 @@
     $proc = new XSLTProcessor();
     $proc->importStylesheet($xslDoc);
     echo $proc->transformToXML($xmlDoc);
+    
   ?>                                         
 </body>
 </html>
